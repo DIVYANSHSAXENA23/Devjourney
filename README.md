@@ -1,7 +1,5 @@
 # Devjourney
 
-[![Site](https://img.shields.io/badge/upayan.dev/Devjourney-1e3a8a?style=for-the-badge&logo=internet-explorer&logoColor=white)](https://upayan.dev/Devjourney)
-
 [![CodeQL](https://github.com/DIVYANSHSAXENA23/Devjourney/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/DIVYANSHSAXENA23/Devjourney/actions/workflows/github-code-scanning/codeql) 
 [![Dependabot Updates](https://github.com/DIVYANSHSAXENA23/Devjourney/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/DIVYANSHSAXENA23/Devjourney/actions/workflows/dependabot/dependabot-updates) 
 [![Daily Tag Creator](https://github.com/DIVYANSHSAXENA23/Devjourney/actions/workflows/daily%20tag%20creator.yml/badge.svg)](https://github.com/DIVYANSHSAXENA23/Devjourney/actions/workflows/daily%20tag%20creator.yml) 
