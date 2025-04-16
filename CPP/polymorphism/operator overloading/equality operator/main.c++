@@ -5,18 +5,30 @@ Output: Whether they are equal or not*/
 using namespace std;
 class time{
     public:
-        int a,b,c;
-        void input(){
-            cout<<"enter a,b,c";
-            cin>>a,b,c;
-            
+        int hour,min,sec;
+        time(int h,int m,int s){
+            hour=h;
+            min=m;
+            sec=s;
         }
-    void operator ==(int,int,int){
-
-    }
+        bool operator ==(time t3){
+            if ((hour==t3.hour) && (min==t3.min) && (sec==t3.sec))
+                return true;
+            
+            else
+                return false;
+        }
 };
-void main(){
-    time o1;
-    o1.input()
+       
+     
+int main(){
+    time o1(3,23,32);
+    time o2(3,23,32);
+    if (o1==o2){
+        cout<<"equal";
+    }
+    else{
+        cout<<"not equal";
+    }
     
 }

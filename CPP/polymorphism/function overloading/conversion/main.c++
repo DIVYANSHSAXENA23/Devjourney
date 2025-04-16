@@ -11,24 +11,27 @@ using namespace std;
 class Converter{
     public:
         int c;
-        void convert(int f){
+        void convert(float f){
             c=(5/9)*f-32;
-            cout<<"in celcius is"<<c;
+            cout<<"in celcius is"<<c<<"\n";
         }
         float m;
-        void convert(float a){
+        void convert(double a){
             m=a/1.609;
-            cout<<"in miles is"<<m;
+            cout<<"in miles is"<<m<<"\n";
         }
         int min;
         void convert(int a){
             min=a*60;
-            cout<<"in minutes is"<<min;
+            cout<<"in minutes is"<<min<<"\n";
         }
 };
 int main(){
     Converter o1;
-    o1.convert(32);
-    o1.convert(300.00);
+    float a=32;
+    double b=300;
+
+    o1.convert(a);
+    o1.convert(b);
     o1.convert(3);
 }
