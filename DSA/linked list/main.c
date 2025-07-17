@@ -3,8 +3,8 @@
 struct node{
     int item;
     struct node *next;
-}*head,*newnode,*temp;
-void display(){
+}*head,*newnode,*temp,*prevnode;
+void insert(){
      int x=0;
     head=NULL;
     while (x==0){
@@ -12,6 +12,11 @@ void display(){
         printf("enter element");
         scanf("%d",&newnode->item);
         newnode->next=NULL;
+       
+        int pos;
+        printf("enter the position to insert 1. first\n 2. specific pos \n 3. last");
+        scanf("%d",&pos);
+        if (pos==3){
         if (head==NULL){
             head=temp=newnode;
         }
@@ -19,6 +24,28 @@ void display(){
             temp->next=newnode;
             temp=newnode;
         }
+    }
+        if(pos==2){
+            temp=head;
+            int posi;
+            int i=1;
+            printf("enter the pos you want to insert : ");
+            scanf("%d",&posi);
+            while (i<(posi-1)){
+                temp=temp->next;
+                i++;
+            } 
+            newnode=temp->next;
+            temp->next=newnode;
+            //not inserting bw the positions
+        }
+
+        if (pos==1){
+            newnode->next=head;
+            head=newnode;
+        }
+            
+        
         printf("enter 0 to continuee");
         scanf("%d",&x);
     }
@@ -47,6 +74,27 @@ void delete_list(){
         head=head->next;
         free(temp);
     }
+    if (ch==2){
+        temp=head;
+        while(temp->next!=NULL){
+            prevnode=temp;
+            temp=temp->next;
+        }
+        free(temp);
+        prevnode->next=NULL;
+    }
+    if (ch==3){
+        temp=head;
+        int posi;
+        int i=1;
+        printf("enter the pos you want to delete from : ");
+        scanf("%d",&posi);
+        while (i<(posi-1)){
+            temp=temp->next;
+            i++;
+            } 
+     //incomplete   
+    }
 }
     
 
@@ -58,7 +106,7 @@ void main(){
     printf("enter 1. to enter element \n 2. print \n 3.delete");
     scanf("%d",&a);
     if (a==1){
-        display();
+        insert();
     }
     if (a==2){
         print_list();
