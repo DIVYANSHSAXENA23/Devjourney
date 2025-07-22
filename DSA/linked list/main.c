@@ -46,7 +46,7 @@ void insert(){
         }
             
         
-        printf("enter 0 to continuee");
+        printf("enter 0 to ADD More elements");
         scanf("%d",&x);
     }
 }
@@ -103,7 +103,7 @@ void main(){
     int a;
     int i=0;
     while (i==0){
-    printf("enter 1. to enter element \n 2. print \n 3.delete");
+    printf("enter 1. to insert \n 2. print \n 3.delete");
     scanf("%d",&a);
     if (a==1){
         insert();
