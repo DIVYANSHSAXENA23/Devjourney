@@ -11,7 +11,7 @@ struct node * create(){
     
     head=NULL;
     while (x==0){
-        newnode=(struct node*)malloc(sizeof(struct node) );
+        newnode=(struct node*)malloc(sizeof(struct node));
         printf("enter data");
         scanf("%d",&newnode->data);
         newnode->next=NULL;
