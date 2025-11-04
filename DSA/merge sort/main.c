@@ -23,7 +23,7 @@ void merge(int a[], int lb, int mid, int ub) {
         k++;
     }
 
-    while (j <= ub) {   // copy remaining right half
+    while (j <= ub) {   // copy remaining right half8op
         b[k] = a[j];
         j++;
         k++;
